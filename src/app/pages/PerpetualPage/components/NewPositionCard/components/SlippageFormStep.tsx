@@ -83,7 +83,7 @@ export const SlippageFormStep: TransitionStep<NewPositionCardStep> = ({
           maxDecimals={2}
           mode={AssetValueMode.auto}
           value={minEntryPrice}
-          assetString={pair.shortAsset}
+          assetString={pair.longAsset}
         />
       </div>
       <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-mb-1 tw-text-xs tw-font-medium">
@@ -96,7 +96,7 @@ export const SlippageFormStep: TransitionStep<NewPositionCardStep> = ({
           maxDecimals={2}
           mode={AssetValueMode.auto}
           value={minLiquidationPrice}
-          assetString={pair.shortAsset}
+          assetString={pair.longAsset}
         />
       </div>
     </div>
